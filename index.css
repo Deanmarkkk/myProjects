@@ -1,0 +1,243 @@
+body {
+    font-family: serif;
+    margin: 0%;
+    /*background-color: rgb(11, 10, 10);*/
+}
+.ig {
+    width: 30px;
+    transition: ease-out .3s;
+    transform: scale(1);
+}
+header {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding-top: 10px;
+    background-color: transparent;
+}
+ul {
+    display: flex;
+    gap: 15px;
+    justify-content: right;
+    position: fixed;
+    
+}
+.ig {
+    margin-right: 850px;
+}
+.r {
+    margin-right: 15px;
+}
+a, li {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    transition: ease-out .2s;
+}
+.soc-med {
+    width: 20px;
+}
+.me {
+    width: 240px;
+    height: 240px;
+    transform: scale(1.1);
+}
+.me-border {
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+.home {
+    display: flex;
+    justify-content: center;
+    margin: 15% 0% 25% 0%;
+    gap: 10%;
+}
+
+.education {
+    background-image: url('folder/1.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 800px; 
+    width: 100%; 
+}
+.skills {
+    background-image: url('folder/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+}
+.skills-2 {
+    background-image: url('folder/5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+}
+.projects {
+    background-image: url('folder/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+}
+.img-skills {
+    width: 70px;
+    height: 70px;
+    padding: 10px 0px 0px 60px ;
+    transition: ease-out .3s;
+}
+.skills-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.group {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 15vw;
+    margin-top: 35%;
+    transition: ease-out .4s;
+}
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+footer {
+    background-color: transparent;
+}
+.footer {
+    text-align: center;
+}
+/*TRANSITIONS OF MY WEBSITE*/
+.ig:hover {
+    transition: ease-in-out .3s;
+    transform: scale(1.2);
+}
+li:hover {
+    transition: ease-in-out .2s;
+    text-shadow: 0px 0px 10px rgb(235, 249, 252);
+}
+.group:hover {
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    box-shadow: 0px 0px 20px rgba(0, 251, 255, 2) inset;
+}
+.img-skills:hover {
+    transform: scale(1.3);
+    transition: ease-in-out .3s;
+    padding: 10px 0px 0px 50px
+}
+
+/*MY COMPLETE MOBILE VIEW*/
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        background-color: white;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 10px;
+       
+    }
+
+    ul {
+        gap: 10px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ig {
+        margin-right: 25px;
+        width: 25px;
+    }
+
+    .r {
+        margin: 0;
+    }
+
+    a, li {
+        font-size: 12px;
+        color: black;
+    }
+
+    .home {
+        flex-direction: column;
+        margin: 20% 0 70% 0;
+        gap: 20px;
+    }
+
+    .me {
+        width: 200px;
+        height: 200px;
+    }
+
+    .me-border {
+        margin: 0 auto;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .intro {
+        margin-top: 15%;
+        margin-bottom: 10%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .education,
+    .skills,
+    .skills-2,
+    .projects {
+        height: 18vh; 
+        width: 80vw; 
+        background-size: cover;
+        padding: 20px; 
+    }
+
+    .skills-group {
+        gap: 15px;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .group {
+        width: 15vw; 
+        height: 5vh;
+        margin: 5px 0;
+        padding: 5px;
+    }
+
+    .text {
+        font-size: 3px;
+        color: white;
+    }
+
+    .img-skills {
+        width: 10px;
+        height: 10px;
+        padding: 0px 0px 0px 6px;
+    }
+
+    .img-skills:hover {
+        width: 10px;
+        height: 10px;
+        padding: 0px 0px 0px 6px;
+    }
+    
+
+    footer {
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
